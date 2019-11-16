@@ -21,6 +21,9 @@ jobs:
       - run:
           name: test
           command: npm run test
+      - run:
+          name: build-project
+          command: npm run build:gh-pages
       - store_artifacts:
           path: test-results.xml
           prefix: tests
