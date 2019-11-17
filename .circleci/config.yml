@@ -35,7 +35,7 @@ jobs:
             - "3a:9b:c5:67:6f:06:50:55:dd:67:c9:ed:0c:9e:1f:fa"
       - run:
           name: Deploy docs to gh-pages branch
-          command: gh-pages --dotfiles --message "[skip ci] Updates" -d dist
+          command: './node_modules/.bin/gh-pages --dotfiles --message "[skip ci] Updates" -d dist'
       - store_artifacts:
           path: test-results.xml
           prefix: tests
