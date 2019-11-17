@@ -10,7 +10,7 @@ const routerBase =
     : {};
 
 module.exports = {
-  mode: "spa",
+  mode: "universal",
 
   ...routerBase,
 
